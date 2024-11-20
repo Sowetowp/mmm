@@ -90,7 +90,7 @@ const Happy: React.FC<CarouselProps> = ({ view, details, updateText, production 
 
     return (
         <>
-            <section id='happy' className='w-full m-auto relative max-w-7xl flex items-center flex-wrap bg-stone-50 py-4 px-16'>
+            <section id='happy' className='w-full m-auto relative max-w-[90rem] flex items-center flex-wrap bg-stone-50 py-4 px-16'>
                 {details.map((det: any, index: any) => (
                     <div key={index} className='xl:w-1/4 md:w-1/2 w-full text-center py-8'>
                         {det.img}

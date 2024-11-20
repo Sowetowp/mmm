@@ -9,7 +9,7 @@ const Testimony: React.FC<testimonyProp> = ({ testimonyData, updateText, updateI
 
     return (
         <>
-            <section className='w-full relative max-w-7xl m-auto bg-stone-50 py-28'>
+            <section className='w-full relative max-w-[90rem] m-auto bg-stone-50 py-28'>
                 <h2 className='font-bold text-[1.6rem] text-center m-auto max-w-[80%]' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`testimonyDatahead`, 25)}>{testimonyData.head}</h2>
                 <p className='mt-7 m-auto text-[0.95rem] text-gray-500 w-[90%] md:w-2/3 xl:w-1/2 text-center' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`testimonyDatabody`, 120)}>{testimonyData.body}</p>
                 <div className='w-full md:px-10 px-5 flex flex-wrap'>

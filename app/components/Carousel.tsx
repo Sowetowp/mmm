@@ -90,7 +90,7 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
 
     return (
         <>
-            <section id='sec1' className='xl:h-screen 2xl:h-[40vh] h-[60vh] bg-black m-auto w-full overflow-hidden max-w-7xl relative'>
+            <section id='sec1' className='max-h-[45rem] xl:h-screen 2xl:h-[40vh] h-[60vh] bg-black m-auto w-full overflow-hidden max-w-[90rem] relative'>
                 {slides.map((slide: any, index: any) => (
                     // <div key={index} className={`h-full w-full absolute ${currentIndex === index || prevIndex.current === index ? "z-[11]" : "z-10"} transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>
                     <div key={index} className={`h-full w-full  ${currentIndex === index || prevIndex.current === index ? "z-[11] opacity-100" : "z-10 opacity-0"} absolute transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>

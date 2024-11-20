@@ -7,7 +7,7 @@ interface servicesProp {
 const Services: React.FC<servicesProp> = ({ servicesData, updateText }) => {
     return (
         <>
-            <section id='sec4' className='w-full relative max-w-7xl m-auto bg-stone-50 py-28'>
+            <section id='sec4' className='w-full relative max-w-[90rem] m-auto bg-stone-50 py-28'>
                 <h2 data-aos="fade-up" data-aos-duration="1000" className='font-bold text-[1.6rem] text-center m-auto max-w-[80%]' onClick={() => updateText(`servicesDatahead`, 12)}>{servicesData.head}</h2>
                 <p data-aos="fade-up" data-aos-duration="1000" className='mt-7 m-auto text-[0.95rem] text-gray-500 w-[90%] md:w-[60%] xl:w-[40%] text-center' onClick={() => updateText(`servicesDatabody`, 97)}>{servicesData.body}</p>
                 <div className='w-full px-10 flex flex-wrap'>

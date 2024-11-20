@@ -54,8 +54,8 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
     }
     return (
         <>
-            <header className={`w-full max-w-7xl m-auto transition-colors duration-500 ${scrollHeader ? "fixed z-[9999] bg-white shadow" : "relative z-[9999] md:bg-transparent"}`}>
-                {!production &&
+            <header className={`w-full max-w-[90rem] m-auto transition-colors duration-500 ${scrollHeader ? "fixed z-[9999] bg-white shadow" : "relative z-[9999] md:bg-transparent"}`}>
+                {/* {!production &&
                     <section className={`bg-white py-3 flex items-center gap-3 justify-end px-3 ${scrollHeader ? "hidden" : "block"}`}>
                         <p className='text-xs font-medium cursor-pointer text-blue-500' onClick={() => emailModal(true)}>{email}</p>
                         <button onClick={() => submitHandler()} className="action_has has_saved text-xs font-medium" aria-label="save" type="button">
@@ -93,9 +93,10 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                             </svg>
                         </button>
                     </section>
-                }
+                } */}
                 <section className='w-full py-4 md:py-7 px-3 md:px-8 xl:px-16 flex items-center justify-between'>
-                    <h1 className={`text-xl leading-none tracking-widest ${scrollHeader ? "text-black" : "text-white"}`} onClick={() => updateText("navData", 5)}>{navData}</h1>
+                    <img alt="" className={`w-28 leading-none tracking-widest`} src="/Tecnologo.png"/>
+                    {/* <h1 className={`text-xl leading-none tracking-widest ${scrollHeader ? "text-black" : "text-white"}`} onClick={() => updateText("navData", 5)}>{navData}</h1> */}
                     <div className='md:flex gap-8 items-center hidden'>
                         <a href='#sec1' className={`${scrollHeader && current === "sec1" ? "text-blue-700" : scrollHeader ? "text-black" : "text-white"} hover:text-[#1d4ed8] text-[0.8rem] font-semibold`}>HOME</a>
                         <a className={`${current === "sec2" ? "text-blue-700" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#1d4ed8] font-semibold`} href="#sec2">ABOUT</a>
@@ -117,7 +118,7 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                     </div>
                 </section>
             </header>
-            <section className={`w-full m-auto max-w-7xl md:hidden flex-col flex bg-[#000000de] transition-transform duration-500 ${scrollHeader ? "fixed top-[4.5rem]" : "relative"} z-[9999]`} style={{ transform: `translateX(${menu ? "0%" : "100%"})` }}>
+            <section className={`w-full m-auto max-w-[90rem] md:hidden flex-col flex bg-[#000000de] transition-transform duration-500 ${scrollHeader ? "fixed top-[4.5rem]" : "relative"} z-[9999]`} style={{ transform: `translateX(${menu ? "0%" : "100%"})` }}>
                 <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href='#sec1'>HOME</a>
                 <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="#sec2">ABOUT</a>
                 <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="#sec4">SERVICES</a>

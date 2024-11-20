@@ -7,7 +7,7 @@ interface expertProp {
 const Expert: React.FC<expertProp> = ({ expertData, updateText }) => {
     return (
         <>
-            <section id='sec2' className='w-full relative max-w-7xl m-auto bg-white py-28'>
+            <section id='sec2' className='w-full relative max-w-[90rem] m-auto bg-white py-28'>
                 <h2 className='font-bold text-[1.6rem] text-center m-auto max-w-[80%]' onClick={() => updateText(`expertDatahead`, 33)}>{expertData.head}</h2>
                 <p className='mt-7 m-auto text-[0.95rem] text-gray-500 w-[90%] md:w-2/3 xl:w-1/2 text-center' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`expertDatabody`, 223)}>{expertData.body}</p>
                 <div className='w-full px-10 flex flex-wrap'>
