@@ -13,7 +13,7 @@ const Expert: React.FC<expertProp> = ({ expertData, updateText }) => {
                 <div className='w-full px-10 flex flex-wrap'>
                     {expertData.exp.map((ex: any, index: any) => (
                         <div key={index} className='md:w-1/3 w-full md:px-6 xl:px-10 text-center mt-14'>
-                            <span data-aos="fade-up" data-aos-duration="1000" className='bg-[#A4B72E] inline-block p-6 rounded-full'>{ex.img}</span>
+                            <span data-aos="fade-up" data-aos-duration="1000" className='bg-[#004436] inline-block p-6 rounded-full'>{ex.img}</span>
                             <p data-aos="fade-up" data-aos-duration="1000" className='font-medium text-[0.9rem] mt-4' onClick={() => updateText(`expertDataexp${index}head`, 15)}>{ex.head}</p>
                             <p data-aos="fade-up" data-aos-duration="1000" className='text-sm text-gray-500 mt-3' onClick={() => updateText(`expertDataexp${index}body`, 100)}>{ex.body}</p>
                         </div>
