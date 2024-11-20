@@ -72,7 +72,7 @@ const Contact: React.FC<contactDatatype> = ({ contactData, updateText, load, ema
                 <div className='w-full px-10 flex flex-wrap'>
                     {contactData.exp.map((ex: any, index: any) => (
                         <div key={index} className='md:w-1/3 w-full md:px-6 xl:px-10 text-center mt-14'>
-                            <span className='border-2 border-blue-700 inline-block p-6 rounded-full' data-aos="fade-up" data-aos-duration="1000">{ex.img}</span>
+                            <span className='border-2 border-[#A4B72E] inline-block p-6 rounded-full' data-aos="fade-up" data-aos-duration="1000">{ex.img}</span>
                             <p data-aos="fade-up" data-aos-duration="1000" className='font-medium text-[0.9rem] mt-4'>{ex.head}</p>
                             <p data-aos="fade-up" data-aos-duration="1000" className='text-sm text-gray-500 mt-3 max-w-[70%] m-auto' onClick={() => updateText(`contactDataexp${index}det`, 78)}>{ex.det}</p>
                             <p data-aos="fade-up" data-aos-duration="1000" className='text-sm text-gray-500' onClick={() => updateText(`contactDataexp${index}det1`, 78)}>{ex.det1}</p>
@@ -89,7 +89,7 @@ const Contact: React.FC<contactDatatype> = ({ contactData, updateText, load, ema
                             <input value={email2} onChange={(e) => setEmail2(e.target.value)} className="border bg-stone-100 px-5 py-3 md:mt-0 mt-8 text-[16px] md:text-sm outline-none placeholder:font-light md:w-[48%] w-full" type="text" placeholder="Email*" />
                             <input value={subject} onChange={(e) => setSubject(e.target.value)} className="border bg-stone-100 px-5 py-3 text-[16px] md:text-sm outline-none placeholder:font-light mt-8 w-full" type="text" placeholder="Subject" />
                             <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="border resize-none h-36 bg-stone-100 px-5 py-3 text-[16px] md:text-sm mt-8 outline-none placeholder:font-light w-full" placeholder="Your Message*" />
-                            <button onClick={(e) => contactUs(e)} className="w-full mt-8 font-semibold text-[16px] md:text-sm text-white py-3 bg-blue-700">SEND MESSAGE</button>
+                            <button onClick={(e) => contactUs(e)} className="w-full mt-8 font-semibold text-[16px] md:text-sm text-white py-3 bg-[#004436]">SEND MESSAGE</button>
                         </form>
                     </div>
                 </div>

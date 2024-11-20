@@ -74,7 +74,7 @@ export default function Home() {
       body: textsToSave?.["contactDatabody"] || "Lorem Ipsum is simply dummy text of the printing and typesetting industry standard.",
       exp: [
         {
-          img: <svg className='w-5' version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#A4B72E"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> </style> <g> <polygon className="fill-blue-700" points="434.162,293.382 434.162,493.862 308.321,493.862 308.321,368.583 203.682,368.583 203.682,493.862 77.841,493.862 77.841,293.382 256.002,153.862 "></polygon> <polygon className="fill-blue-700" points="0,242.682 256,38.93 512,242.682 482.21,285.764 256,105.722 29.79,285.764 "></polygon> <polygon className="fill-blue-700" points="439.853,18.138 439.853,148.538 376.573,98.138 376.573,18.138 "></polygon> </g> </g></svg>,
+          img: <svg className='w-5' version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#A4B72E"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> </style> <g> <polygon className="fill-[#A4B72E]" points="434.162,293.382 434.162,493.862 308.321,493.862 308.321,368.583 203.682,368.583 203.682,493.862 77.841,493.862 77.841,293.382 256.002,153.862 "></polygon> <polygon className="fill-[#A4B72E]" points="0,242.682 256,38.93 512,242.682 482.21,285.764 256,105.722 29.79,285.764 "></polygon> <polygon className="fill-[#A4B72E]" points="439.853,18.138 439.853,148.538 376.573,98.138 376.573,18.138 "></polygon> </g> </g></svg>,
           head: textsToSave?.["contactDataexp0head"] || "CONTACT ADDRESS",
           det: textsToSave?.["contactDataexp0det"] || "833 Indian Summer Court Carol Stream, IL 60188"
         },
@@ -186,7 +186,7 @@ export default function Home() {
       body: textsToSave?.["caseDatabody"] || "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
       worksData: [
         { img: imagesToSave["caseDataworksData0img"] || "/image.png", id: 1 },
-        { img: imagesToSave["caseDataworksData1img"] || "/img_4.jpg", id: 2 },
+        { img: imagesToSave["caseDataworksData1img"] || "/image copy 6.png", id: 2 },
         { img: imagesToSave["caseDataworksData2img"] || "/image copy 5.png", id: 3 },
         { img: imagesToSave["caseDataworksData3img"] || "/img_7.jpg", id: 1 },
         { img: imagesToSave["caseDataworksData4img"] || "/img_10.jpg", id: 2 },

@@ -41,7 +41,7 @@ const CaseStudies: React.FC<caseProps> = ({ caseData, updateText, updateImage, p
             <div data-aos="fade-up" data-aos-duration="1000" onClick={() => production ? setPreview(work.img) : updateImage(`caseDataworksData${index}img`)} key={index} className='xl:w-1/3 cursor-pointer md:w-1/2 w-full mt-14 px-3'>
               <div className='w-full h-64 overflow-hidden group'>
                 <img className='w-full object-cover h-full group-hover:h-[80%] transition-all duration-500' src={work.img} alt="" />
-                <p className='h-[20%] bg-blue-700 px-4 flex items-center text-lg text-white'>Lightbox</p>
+                <p className='h-[20%] bg-[#004436] px-4 flex items-center text-lg text-white'>Lightbox</p>
               </div>
             </div>
           ))}
