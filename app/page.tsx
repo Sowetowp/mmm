@@ -65,7 +65,7 @@ export default function Home() {
   const [texts, setTexts] = useState<any>({
     socials: { dribble: textsToSave?.["socialsdribble"] || "", behance: textsToSave?.["socialsbehance"] || "", ig: textsToSave?.["socialsig"] || "", fb: textsToSave?.["socialsfb"] || "", lin: textsToSave?.["socialslin"] || "", x: textsToSave?.["socialsx"] || "" },
     slides: [
-      { img: imagesToSave["slides0img"] || '/IMG-1925.jpg', title: textsToSave?.["slides0title"] || "Innovative Glass Products", details: textsToSave?.["slides0details"] || "With over 20 years experience helping business to find comprehensive solutions", url: "#sec4", btn: "OUR SERVICES" },
+      { img: imagesToSave["slides0img"] || '/IMG-1925.jpg', title: textsToSave?.["slides0title"] || "Innovative Glass Products", details: textsToSave?.["slides0details"] || "With 20 years of expertise, we deliver comprehensive glass solutions.", url: "#sec4", btn: "OUR SERVICES" },
       { img: imagesToSave["slides1img"] || '/toughenedGlass.88f577c38f3e527c3003.jpg', title: textsToSave?.["slides1title"] || "Qualified Professionals", details: textsToSave?.["slides1details"] || "We have spent thousands of hours to learn technology for solving problems", url: "#sec2", btn: "ABOUT US" },
       { img: imagesToSave["slides2img"] || '/CH10.1fba641681ab4e8131a7.jpg', title: textsToSave?.["slides2title"] || "Returns Guaranteed", details: textsToSave?.["slides2details"] || "We have helped hundreds of companies to grow their business in the competitive world", url: "#sec6", btn: "CASE STUDIES" },
     ],
@@ -95,23 +95,23 @@ export default function Home() {
     },
     navData: textsToSave?.["navData"] || "SPERE",
     expertData: {
-      head: textsToSave?.["expertDatahead"] || "We are an expert consulting firm.",
-      body: textsToSave?.["expertDatabody"] || "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nemo libero debitis vitae. Sapiente quos illum ab rem deleniti adipisci suscipit dignissimos.Sapiente quos illum ab rem deleniti adipisci suscipit dignissimos.",
+      head: textsToSave?.["expertDatahead"] || "We are an expert glass solutions provider.",
+      body: textsToSave?.["expertDatabody"] || "We at Technoglass Industries Limited, established in 2004, provide high-quality architectural glass solutions for commercial and residential projects. Our products include float, decorative, energy-efficient, and safety glass, enhancing building aesthetics and sustainability. With our 24/7 facility, we deliver exceptional production, quality, and service to prestigious projects.",
       exp: [
         {
-          img: <svg className='w-5' fill="#fff" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>bell-solid</title> <path className="clr-i-solid clr-i-solid-path-1" d="M32.85,28.13l-.34-.3A14.37,14.37,0,0,1,30,24.9a12.63,12.63,0,0,1-1.35-4.81V15.15A10.81,10.81,0,0,0,19.21,4.4V3.11a1.33,1.33,0,1,0-2.67,0V4.42A10.81,10.81,0,0,0,7.21,15.15v4.94A12.63,12.63,0,0,1,5.86,24.9a14.4,14.4,0,0,1-2.47,2.93l-.34.3v2.82H32.85Z"></path><path className="clr-i-solid clr-i-solid-path-2" d="M15.32,32a2.65,2.65,0,0,0,5.25,0Z"></path> <rect x="0" y="0" width="36" height="36" fillOpacity="0"></rect> </g></svg>,
+          img: <svg className='w-5 bg' fill="#fff" viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>bell-solid</title> <path className="clr-i-solid clr-i-solid-path-1" d="M32.85,28.13l-.34-.3A14.37,14.37,0,0,1,30,24.9a12.63,12.63,0,0,1-1.35-4.81V15.15A10.81,10.81,0,0,0,19.21,4.4V3.11a1.33,1.33,0,1,0-2.67,0V4.42A10.81,10.81,0,0,0,7.21,15.15v4.94A12.63,12.63,0,0,1,5.86,24.9a14.4,14.4,0,0,1-2.47,2.93l-.34.3v2.82H32.85Z"></path><path className="clr-i-solid clr-i-solid-path-2" d="M15.32,32a2.65,2.65,0,0,0,5.25,0Z"></path> <rect x="0" y="0" width="36" height="36" fillOpacity="0"></rect> </g></svg>,
           head: textsToSave?.["expertDataexp0head"] || "Modern Design",
-          body: textsToSave?.["expertDataexp0body"] || "Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard ."
+          body: textsToSave?.["expertDataexp0body"] || "Offering innovative and aesthetic glass solutions for contemporary architectural needs."
         },
         {
           img: <svg className='w-5' viewBox="0 -7.5 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#fff"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><title>17-multimeda-speaker-megaphone</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="3.Multimedia" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round"> <g id="Multimedia-(Color)" transform="translate(-1298.000000, -308.000000)" stroke="#fff" strokeWidth="3.5"> <g id="17-multimeda-speaker-megaphone" transform="translate(1300.000000, 310.000000)"> <rect id="Layer-1" fill="#fff" x="92" y="0" width="8" height="74" rx="4"> </rect> <path d="M52,22.2792969 C52,22.2792969 76.1601562,22.2792969 92,2.04785156 L92,72 C75.9351563,51.9902344 52,51.9902344 52,51.9902344 L52,22.2792969 Z" id="Layer-2" fill="#FFFFFF"> </path> <rect id="Layer-3" fill="#fff" x="12" y="19" width="40" height="36" rx="3"> </rect> <path d="M10,49 L5,49 C2.23857625,49 0,46.76369 0,43.9980273 L0,30.0019727 C0,27.2394595 2.24419519,25 5,25 L10,25" id="Layer-4" fill="#fff"> </path> <path d="M20.5,28 L43.5,28" id="Layer-5" fill="#fff"> </path> <path d="M30,55 L18,55 L18,81.0007252 C18,83.2132053 19.7889923,85 21.9958262,85 L32.4243989,84.9999999 C34.3526936,85 36.5622035,82.3296774 34.5478516,80 C34.5478516,80 30,74.6191406 30,72.8208008 C30,69.8348349 30,55 30,55 Z" id="Layer-6" fill="#fff"> </path> </g> </g> </g> </g></svg>,
           head: textsToSave?.["expertDataexp1head"] || "Free Support",
-          body: textsToSave?.["expertDataexp1body"] || "Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard ."
+          body: textsToSave?.["expertDataexp1body"] || "Providing reliable customer service and expert guidance throughout every project."
         },
         {
           img: <svg className='w-5' fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M7 17H2a2 2 0 0 1-2-2V2C0 .9.9 0 2 0h16a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2h-5l4 2v1H3v-1l4-2zM2 2v11h16V2H2z"></path></g></svg>,
-          head: textsToSave?.["expertDataexp2head"] || "Responsive",
-          body: textsToSave?.["expertDataexp2body"] || "Lorem Ipsum is simply text of the printing and typesetting industry. Lorem Ipsum has been standard ."
+          head: textsToSave?.["expertDataexp2head"] || "24/7 availability",
+          body: textsToSave?.["expertDataexp2body"] || "Ensuring continuous production and delivery to meet both small and large-scale requirements."
         }
       ]
     },

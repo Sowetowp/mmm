@@ -31,10 +31,10 @@ const CaseStudies: React.FC<caseProps> = ({ caseData, updateText, updateImage, p
         <h2 className='font-bold text-[1.6rem] text-center m-auto max-w-[80%]' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`caseDatahead`, 17)}>{caseData.head}</h2>
         <p className='mt-7 m-auto text-[0.9rem] text-gray-500 w-[90%] md:w-2/3 xl:w-1/2 text-center' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`caseDatabody`, 131)}>{caseData.body}</p>
         <div data-aos="fade-up" data-aos-duration="1000" className='flex flex-wrap mt-11 justify-center items-center gap-5'>
-          <a className={`font-medium cursor-pointer hover:text-[#1d4ed8] text-xs ${current === 0 ? "text-blue-700" : "text-gray-600"}`} onClick={() => { setWorks(caseData.worksData), setCurrent(0) }}>ALL</a>
-          <a className={`font-medium cursor-pointer hover:text-[#1d4ed8] text-xs ${current === 1 ? "text-blue-700" : "text-gray-600"}`} onClick={() => filterer(1)}>LOGO</a>
-          <a className={`font-medium cursor-pointer hover:text-[#1d4ed8] text-xs ${current === 2 ? "text-blue-700" : "text-gray-600"}`} onClick={() => filterer(2)}>GRAPHIC</a>
-          <a className={`font-medium cursor-pointer hover:text-[#1d4ed8] text-xs ${current === 3 ? "text-blue-700" : "text-gray-600"}`} onClick={() => filterer(3)}>PRINT</a>
+          <a className={`font-medium cursor-pointer hover:text-[#004436] text-xs ${current === 0 ? "text-[#A4B72E]" : "text-gray-600"}`} onClick={() => { setWorks(caseData.worksData), setCurrent(0) }}>ALL</a>
+          <a className={`font-medium cursor-pointer hover:text-[#004436] text-xs ${current === 1 ? "text-[#A4B72E]" : "text-gray-600"}`} onClick={() => filterer(1)}>LOGO</a>
+          <a className={`font-medium cursor-pointer hover:text-[#004436] text-xs ${current === 2 ? "text-[#A4B72E]" : "text-gray-600"}`} onClick={() => filterer(2)}>GRAPHIC</a>
+          <a className={`font-medium cursor-pointer hover:text-[#004436] text-xs ${current === 3 ? "text-[#A4B72E]" : "text-gray-600"}`} onClick={() => filterer(3)}>PRINT</a>
         </div>
         <div className='w-full md:px-10 flex flex-wrap'>
           {works.map((work, index) => (

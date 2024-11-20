@@ -16,7 +16,7 @@ const Blog: React.FC<blogProp> = ({ blogData, updateText, updateImage }) => {
                     {blogData.works.map((work: any, index: any) => (
                         <div data-aos="fade-up" data-aos-duration="1000" key={index} className='xl:w-1/3 m-auto md:w-1/2 w-full mt-14 px-4'>
                             <div data-aos="fade-up" data-aos-duration="1000" className='w-full h-60 relative'>
-                                <p className='bg-blue-700 w-fit bottom-0 px-4 absolute py-2 text-xs text-white' onClick={() => updateText(`blogDataworks${index}day`, 7)}>{work.day}</p>
+                                <p className='bg-[#004436] w-fit bottom-0 px-4 absolute py-2 text-xs text-white' onClick={() => updateText(`blogDataworks${index}day`, 7)}>{work.day}</p>
                                 <img className='w-full object-cover h-full' onClick={()=>updateImage(`blogDataworks${index}img`)} src={work.img} alt="" />
                             </div>
                             <p data-aos="fade-up" data-aos-duration="1000" className='font-medium text-lg mt-5' onClick={() => updateText(`blogDataworks${index}title`, 34)}>{work.title}</p>

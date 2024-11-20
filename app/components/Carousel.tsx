@@ -28,7 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
             if (nextRef.current) {
                 nextRef.current.click();
             }
-        }, 5000);
+        }, 7000);
 
         return () => clearInterval(intervalId);
     }, [production]);
@@ -94,11 +94,11 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
                 {slides.map((slide: any, index: any) => (
                     // <div key={index} className={`h-full w-full absolute ${currentIndex === index || prevIndex.current === index ? "z-[11]" : "z-10"} transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>
                     <div key={index} className={`h-full w-full  ${currentIndex === index || prevIndex.current === index ? "z-[11] opacity-100" : "z-10 opacity-0"} absolute transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>
-                        <div onClick={(e) => handleParentClick(e, index)} className='h-full w-full absolute text-center bg-[#00000091] flex justify-center items-center'>
+                        <div onClick={(e) => handleParentClick(e, index)} className='h-full w-full absolute text-center bg-[#0000009e] flex justify-center items-center'>
                             <span className='mt-20'>
-                                <p className='text-white font-bold text-5xl' onClick={() => updateText(`slides${index}title`, 20)}>{slide.title}</p>
+                                <p className='text-white font-bold text-5xl px-2' onClick={() => updateText(`slides${index}title`, 20)}>{slide.title}</p>
                                 <p className='text-white mt-3 max-w-[95%] m-auto' onClick={() => updateText(`slides${index}details`, 78)}>{slide.details}</p>
-                                <a href={slide.url} className='mt-8 px-5 py-3 bg-blue-700 inline-block text-xs text-white font-semibold'>{slide.btn}</a>
+                                <a href={slide.url} className='mt-8 px-5 py-3 bg-[#004436] inline-block text-xs text-white font-semibold'>{slide.btn}</a>
                             </span>
                         </div>
                         <img onClick={() => updateImage(`slides${index}img`)} className='h-full w-full object-cover' src={slide.img} alt="" />
