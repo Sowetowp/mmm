@@ -140,7 +140,6 @@
   }
 }
 
-/* From Uiverse.io by Praashoo7 */
 .main {
   display: flex;
   align-items: center;
@@ -159,7 +158,7 @@
   width: .3em;
   height: 4em;
   border-radius: 50px;
-  background: #cbd6f3;
+  background: #afb974;
 }
 
 .loader:after {
@@ -220,7 +219,7 @@
     0px -1px 15px -8px rgba(0, 0, 0, 0.09);
   border-radius: 50%;
   transition: transform 800ms cubic-bezier(1, -0.4, 0, 1.4);
-  background-color: #1d4ed8;
+  background-color: #004436;
   animation: 3.63s move ease-in-out infinite;
 }
 

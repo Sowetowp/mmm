@@ -24,10 +24,10 @@ const Testimony: React.FC<testimonyProp> = ({ testimonyData, updateText, updateI
                         </div>
                     ))}
                 </div>
-                <div className='w-full pt-28 flex flex-wrap'>
+                <div className='w-full pt-28 flex flex-wrap items-center'>
                     {testimonyData.sponsors.map((sp: any, index: any) => (
                         <div data-aos="fade" data-aos-duration="1000" key={index} className='md:w-1/4 w-1/2'>
-                            <img className='w-28 mt-4 m-auto' src={sp.img} alt="" />
+                            <img className='w-20 mt-4 m-auto' src={sp.img} alt="" />
                         </div>
                     ))}
                 </div>

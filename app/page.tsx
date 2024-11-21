@@ -71,27 +71,27 @@ export default function Home() {
     ],
     contactData: {
       head: textsToSave?.["contactDatahead"] || "Get in touch with us",
-      body: textsToSave?.["contactDatabody"] || "Lorem Ipsum is simply dummy text of the printing and typesetting industry standard.",
+      body: textsToSave?.["contactDatabody"] || "Reach out to us for tailored solutions and expert support.",
       exp: [
         {
           img: <svg className='w-5' version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#A4B72E"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> </style> <g> <polygon className="fill-[#A4B72E]" points="434.162,293.382 434.162,493.862 308.321,493.862 308.321,368.583 203.682,368.583 203.682,493.862 77.841,493.862 77.841,293.382 256.002,153.862 "></polygon> <polygon className="fill-[#A4B72E]" points="0,242.682 256,38.93 512,242.682 482.21,285.764 256,105.722 29.79,285.764 "></polygon> <polygon className="fill-[#A4B72E]" points="439.853,18.138 439.853,148.538 376.573,98.138 376.573,18.138 "></polygon> </g> </g></svg>,
           head: textsToSave?.["contactDataexp0head"] || "CONTACT ADDRESS",
-          det: textsToSave?.["contactDataexp0det"] || "833 Indian Summer Court Carol Stream, IL 60188"
+          det: textsToSave?.["contactDataexp0det"] || "Plot C62, Crystal Glass Close, Amowo Odofin Industrial Estate, Off Oshodi Apapa Expressway, Lagos, Nigeria."
         },
         {
           img: <svg className='w-5' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#A4B72E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>,
           head: textsToSave?.["contactDataexp1head"] || "EMAIL ADDRESS",
-          det: textsToSave?.["contactDataexp1det"] || "caliberthemes@gmail.com",
-          det1: textsToSave?.["contactDataexp1det1"] || "info.caliber@gmail.com"
+          det: textsToSave?.["contactDataexp1det"] || "info@technoglassng.com",
+          det1: textsToSave?.["contactDataexp1det1"] || "info@technoglassng.com"
         },
         {
           img: <svg className='w-5' viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#A4B72E"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>call [#192]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -7321.000000)" fill="#A4B72E"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M61.7302966,7173.99596 C61.2672966,7175.40296 59.4532966,7176.10496 58.1572966,7175.98796 C56.3872966,7175.82796 54.4612966,7174.88896 52.9992966,7173.85496 C50.8502966,7172.33496 48.8372966,7169.98396 47.6642966,7167.48896 C46.8352966,7165.72596 46.6492966,7163.55796 47.8822966,7161.95096 C48.3382966,7161.35696 48.8312966,7161.03996 49.5722966,7161.00296 C50.6002966,7160.95296 50.7442966,7161.54096 51.0972966,7162.45696 C51.3602966,7163.14196 51.7112966,7163.84096 51.9072966,7164.55096 C52.2742966,7165.87596 50.9912966,7165.93096 50.8292966,7167.01396 C50.7282966,7167.69696 51.5562966,7168.61296 51.9302966,7169.09996 C52.6632966,7170.05396 53.5442966,7170.87696 54.5382966,7171.50296 C55.1072966,7171.86196 56.0262966,7172.50896 56.6782966,7172.15196 C57.6822966,7171.60196 57.5872966,7169.90896 58.9912966,7170.48196 C59.7182966,7170.77796 60.4222966,7171.20496 61.1162966,7171.57896 C62.1892966,7172.15596 62.1392966,7172.75396 61.7302966,7173.99596 C61.4242966,7174.92396 62.0362966,7173.06796 61.7302966,7173.99596" id="call-[#192]"> </path> </g> </g> </g> </g></svg>,
           head: textsToSave?.["contactDataexp2head"] || "PHONE NUMBER",
-          det: textsToSave?.["contactDataexp2det"] || "1-800-440-010",
-          det1: textsToSave?.["contactDataexp2det1"] || "1-800-044-107"
+          det: textsToSave?.["contactDataexp2det"] || "+ 234-703 274 9126",
+          det1: textsToSave?.["contactDataexp2det1"] || "+ 234-810 274 9230"
         }
       ],
-      coordinate: textsToSave?.["contactDatacoordinate"] || "6.5827, 3.3405"
+      coordinate: textsToSave?.["contactDatacoordinate"] || "6.4558, 3.3365"
     },
     navData: textsToSave?.["navData"] || "SPERE",
     expertData: {
@@ -188,24 +188,24 @@ export default function Home() {
         { img: imagesToSave["caseDataworksData0img"] || "/image.png", id: 1 },
         { img: imagesToSave["caseDataworksData1img"] || "/image copy 6.png", id: 2 },
         { img: imagesToSave["caseDataworksData2img"] || "/image copy 5.png", id: 3 },
-        { img: imagesToSave["caseDataworksData3img"] || "/img_7.jpg", id: 1 },
-        { img: imagesToSave["caseDataworksData4img"] || "/img_10.jpg", id: 2 },
-        { img: imagesToSave["caseDataworksData5img"] || "/img_12.jpg", id: 3 }
+        { img: imagesToSave["caseDataworksData3img"] || "/image copy 6.png", id: 1 },
+        { img: imagesToSave["caseDataworksData4img"] || "/image copy 5.png", id: 2 },
+        { img: imagesToSave["caseDataworksData5img"] || "/image.png", id: 3 }
       ]
     },
     testimonyData: {
       head: textsToSave?.["testimonyDatahead"] || "Our client's testimonials",
-      body: textsToSave?.["testimonyDatabody"] || "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.",
+      body: textsToSave?.["testimonyDatabody"] || "At Technoglass Industries, we value our clients' trust and satisfaction. Here's what they have to say about working with us.",
       works: [
         { img: imagesToSave["testimonyDataworks0img"] || "/img_5.jpg", name: textsToSave?.["testimonyDataworks0name"] || "JAMES WILLAMSON", title: textsToSave?.["testimonyDataworks0title"] || "CREATIVE DIRECTOR", comment: textsToSave?.["testimonyDataworks0comment"] || "This theme is very easy to use and understand, and provides enough options and customization without being overwhelming." },
         { img: imagesToSave["testimonyDataworks1img"] || "/img_4 (1).jpg", name: textsToSave?.["testimonyDataworks1name"] || "JAMES WILLAMSON", title: textsToSave?.["testimonyDataworks0title"] || "CREATIVE DIRECTOR", comment: textsToSave?.["testimonyDataworks1comment"] || "This theme is very easy to use and understand, and provides enough options and customization without being overwhelming." },
         { img: imagesToSave["testimonyDataworks2img"] || "/img_6 (1).jpg", name: textsToSave?.["testimonyDataworks2name"] || "JAMES WILLAMSON", title: textsToSave?.["testimonyDataworks0title"] || "CREATIVE DIRECTOR", comment: textsToSave?.["testimonyDataworks2comment"] || "This theme is very easy to use and understand, and provides enough options and customization without being overwhelming." }
       ],
       sponsors: [
-        { img: "/img_1.png" },
-        { img: "/img_2.png" },
-        { img: "/img_4.png" },
-        { img: "/img_5.png" }
+        { img: "/tata.svg" },
+        { img: "/icon.svg" },
+        { img: "/kfc.svg" },
+        { img: "/boc.svg" },
       ]
     },
     blogData: {
