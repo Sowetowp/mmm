@@ -4,11 +4,11 @@ import Expert from "../components/Expert";
 import Founded from "../components/Founded";
 import Award from "../components/Award";
 import Services from "../components/Services";
-import Consultants from "../components/Consultants";
+// import Consultants from "../components/Consultants";
 import Happy from "../components/Happy";
 import CaseStudies from "../components/CaseStudies";
-import Testimony from "../components/Testimony";
-import Blog from "../components/Blog";
+// import Testimony from "../components/Testimony";
+// import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
@@ -542,11 +542,11 @@ export default function Home() {
                 <Founded foundedData={texts.foundedData} updateText={updateText} updateImage={updateImage} />
                 <Award awardData={texts.awardData} updateText={updateText} />
                 <Services servicesData={texts.servicesData} updateText={updateText} />
-                <Consultants consultantData={texts.consultantData} updateText={updateText} production={production} updateImage={updateImage} />
+                {/* <Consultants consultantData={texts.consultantData} updateText={updateText} production={production} updateImage={updateImage} /> */}
                 <Happy view={view} details={texts.details} production={production} updateText={updateText} />
                 <CaseStudies production={production} updateImage={updateImage} caseData={texts.caseData} updateText={updateText} />
-                <Testimony updateImage={updateImage} testimonyData={texts.testimonyData} updateText={updateText} />
-                <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} />
+                {/* <Testimony updateImage={updateImage} testimonyData={texts.testimonyData} updateText={updateText} /> */}
+                {/* <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} /> */}
                 <Contact load={setLoading} email={email} contactData={texts.contactData} updateText={updateText} />
                 <Footer navData={texts.navData} socials={texts.socials} updateText={updateText} production={production} />
                 {modal &&
