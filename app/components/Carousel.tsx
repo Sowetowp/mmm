@@ -31,37 +31,25 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
         }, 7000);
 
         return () => clearInterval(intervalId);
-    }, [production]);
+    }, [production, currentIndex]);
 
     const position = (index: number) => {
         if (index === currentIndex) {
-            return "0%"
-        } else if (currentIndex === 0 && index === slides.length - 1 && prevIndex.current === 1) {
-            return "-100%"
-        } else if (currentIndex === 1 && prevIndex.current === 2 && index === 0) {
-            return "-100%"
-        } else if (prevIndex.current < currentIndex && index === currentIndex - 1) {
-            return "-100%"
-        } else if (currentIndex === 0 && prevIndex.current === slides.length - 1 && index === 1) {
-            return "100%"
-        } else if (currentIndex === 0 && prevIndex.current === slides.length - 1 && index === slides.length - 1) {
-            return "-100%"
-        } else if (currentIndex === slides.length - 1 && index === 0) {
-            return "100%"
-        } else if (currentIndex !== 0 && prevIndex.current === 0 && index > currentIndex) {
-            return "100%"
-        } else if (prevIndex.current === 0 && currentIndex === 0 && index === 1) {
-            return "100%"
-        } else if (prevIndex.current === 0 && currentIndex === 0 && index === slides.length - 1) {
-            return "-100%"
-        } else if (index > currentIndex && prevIndex.current === index) {
-            return "100%"
-        } else if (index < currentIndex && prevIndex.current === index) {
-            return "-100%"
-        } else if (currentIndex === slides.length - 1 && prevIndex.current === 0 && index === 0) {
-            return "100%"
+            return "0%";
         }
-    }
+        if ((index === currentIndex + 1) || (currentIndex === slides.length - 1 && index === 0)) {
+            return "100%";
+        }
+        if ((index === currentIndex - 1) || (currentIndex === 0 && index === slides.length - 1)) {
+            return "-100%";
+        }
+        if (index > currentIndex || (currentIndex === slides.length - 1 && index === 0)) {
+            return "100%";
+        } else {
+            return "-100%";
+        }
+    };
+
 
     const handleParentClick = (event: any, index: number) => {
         if (event.target === event.currentTarget) {

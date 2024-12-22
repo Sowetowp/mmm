@@ -13,7 +13,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
-import { Suspense } from 'react'
+import { Suspense } from 'react';
 
 export default function Home() {
   const [view, setView] = useState<string>('');
@@ -65,6 +65,9 @@ export default function Home() {
   const [texts, setTexts] = useState<any>({
     socials: { dribble: textsToSave?.["socialsdribble"] || "", behance: textsToSave?.["socialsbehance"] || "", ig: textsToSave?.["socialsig"] || "", fb: textsToSave?.["socialsfb"] || "", lin: textsToSave?.["socialslin"] || "", x: textsToSave?.["socialsx"] || "" },
     slides: [
+      { img: imagesToSave["slides0img"] || '/IMG-1925.jpg', title: textsToSave?.["slides0title"] || "Innovative Glass Products", details: textsToSave?.["slides0details"] || "With 20 years of expertise, we deliver comprehensive glass solutions.", url: "#sec4", btn: "OUR SERVICES" },
+      { img: imagesToSave["slides1img"] || '/toughenedGlass.88f577c38f3e527c3003.jpg', title: textsToSave?.["slides1title"] || "Qualified Professionals", details: textsToSave?.["slides1details"] || "We have spent thousands of hours to learn technology for solving problems", url: "#sec2", btn: "ABOUT US" },
+      { img: imagesToSave["slides2img"] || '/CH10.1fba641681ab4e8131a7.jpg', title: textsToSave?.["slides2title"] || "Returns Guaranteed", details: textsToSave?.["slides2details"] || "We have helped hundreds of companies to grow their business in the competitive world", url: "#sec6", btn: "CASE STUDIES" },
       { img: imagesToSave["slides0img"] || '/IMG-1925.jpg', title: textsToSave?.["slides0title"] || "Innovative Glass Products", details: textsToSave?.["slides0details"] || "With 20 years of expertise, we deliver comprehensive glass solutions.", url: "#sec4", btn: "OUR SERVICES" },
       { img: imagesToSave["slides1img"] || '/toughenedGlass.88f577c38f3e527c3003.jpg', title: textsToSave?.["slides1title"] || "Qualified Professionals", details: textsToSave?.["slides1details"] || "We have spent thousands of hours to learn technology for solving problems", url: "#sec2", btn: "ABOUT US" },
       { img: imagesToSave["slides2img"] || '/CH10.1fba641681ab4e8131a7.jpg', title: textsToSave?.["slides2title"] || "Returns Guaranteed", details: textsToSave?.["slides2details"] || "We have helped hundreds of companies to grow their business in the competitive world", url: "#sec6", btn: "CASE STUDIES" },
