@@ -17,7 +17,7 @@ import { Suspense } from 'react';
 
 export default function Home() {
   const [view, setView] = useState<string>('');
-  const [range, setRange] = useState(0)
+  const [range, setRange] = useState(0);
   const [edit, setEdit] = useState("");
   const [key, setKey] = useState("");
   const [modal, setModal] = useState(false)

@@ -19,7 +19,7 @@
 # misc
 .DS_Store
 *.pem
-
+k.js
 # debug
 npm-debug.log*
 yarn-debug.log*
