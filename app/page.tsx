@@ -20,8 +20,8 @@ export default function Home() {
   const [range, setRange] = useState(0);
   const [edit, setEdit] = useState("");
   const [key, setKey] = useState("");
-  const [modal, setModal] = useState(false)
-  const [imageModal, setImageModal] = useState(false)
+  const [modal, setModal] = useState(false);
+  const [imageModal, setImageModal] = useState(false);
   const [emailModal, setEmailModal] = useState(true)
   const [production, setProduction] = useState(true)
   const [welcome, setWelcome] = useState(true)
