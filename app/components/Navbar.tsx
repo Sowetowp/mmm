@@ -54,7 +54,7 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
     }
     return (
         <>
-            <header className={`w-full max-w-[90rem] m-auto transition-colors duration-500 ${scrollHeader ? "fixed z-[9999] bg-white shadow" : "relative z-[9999] md:bg-transparent"}`}>
+            <header className={`w-full max-w-[95rem] m-auto transition-colors duration-500 ${scrollHeader ? "fixed z-[9999] bg-white shadow" : "relative z-[9999] md:bg-transparent"}`}>
                 {/* {!production &&
                     <section className={`bg-white py-3 flex items-center gap-3 justify-end px-3 ${scrollHeader ? "hidden" : "block"}`}>
                         <p className='text-xs font-medium cursor-pointer text-blue-500' onClick={() => emailModal(true)}>{email}</p>

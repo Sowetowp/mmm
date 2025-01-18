@@ -66,7 +66,7 @@ const Contact: React.FC<contactDatatype> = ({ contactData, updateText, load, ema
 
     return (
         <>
-            <section id="sec8" className='w-full relative overflow-hidden max-w-[90rem] m-auto bg-stone-50 py-28'>
+            <section id="sec8" className='w-full relative overflow-hidden max-w-[95rem] m-auto bg-stone-50 py-28'>
                 <h2 className='font-bold text-[1.6rem] text-center m-auto max-w-[80%]' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`contactDatahead`, 20)}>{contactData.head}</h2>
                 <p className='mt-7 m-auto text-[0.95rem] text-gray-500 w-[90%] md:w-2/3 xl:w-1/2 text-center' data-aos="fade-up" data-aos-duration="1000" onClick={() => updateText(`contactDatabody`, 83)}>{contactData.body}</p>
                 <div className='w-full px-10 flex flex-wrap'>

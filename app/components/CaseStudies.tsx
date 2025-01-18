@@ -13,6 +13,7 @@ interface caseProps {
   production: any
 }
 const CaseStudies: React.FC<caseProps> = ({ caseData, updateText, updateImage, production }) => {
+  const [more, setMore] = useState(6)
   const [preview, setPreview] = useState("")
   const [current, setCurrent] = useState(0)
   const [works, setWorks] = useState<Work[]>([])
@@ -20,6 +21,14 @@ const CaseStudies: React.FC<caseProps> = ({ caseData, updateText, updateImage, p
     let filtered: Work[] = caseData.worksData.filter((fil: Work) => fil.id === id)
     setWorks(filtered)
     setCurrent(id)
+  }
+
+  const seeMore = () => {
+    if (works.length - 7 > more) {
+      setMore(more + 6)
+    } else {
+      setMore(works.length)
+    }
   }
 
   useEffect(() => {
@@ -38,15 +47,16 @@ const CaseStudies: React.FC<caseProps> = ({ caseData, updateText, updateImage, p
           <a className={`font-medium cursor-pointer hover:text-[#004436] text-xs ${current === 3 ? "text-[#A4B72E]" : "text-gray-600"}`} onClick={() => filterer(3)}>DRILLING</a>
         </div>
         <div className='w-full md:px-10 flex flex-wrap'>
-          {works.map((work, index) => (
-            <div data-aos="fade-up" data-aos-duration="1000" onClick={() => production ? setPreview(work.img) : updateImage(`caseDataworksData${index}img`)} key={index} className='xl:w-1/3 cursor-pointer md:w-1/2 w-full mt-14 px-3'>
+          {Array.from({ length: more }).map((work, index) => (
+            <div data-aos="fade-up" data-aos-duration="1000" onClick={() => production ? setPreview(works[0]?.img) : updateImage(`caseDataworksData${index}img`)} key={index} className='xl:w-1/3 cursor-pointer md:w-1/2 w-full mt-14 px-3'>
               <div className='w-full h-64 overflow-hidden group'>
-                <img className='w-full object-cover h-full group-hover:h-[80%] transition-all duration-500' src={work.img} alt="" />
-                <p className='h-[20%] bg-[#004436] px-4 flex items-center text-base text-white'>{work.content || "NIL"}</p>
+                <img className='w-full object-cover h-full group-hover:h-[80%] transition-all duration-500' src={works[index]?.img} alt="" />
+                <p className='h-[20%] bg-[#004436] px-4 flex items-center text-base text-white'>{works[index]?.content || "NIL"}</p>
               </div>
             </div>
           ))}
         </div>
+        {works.length !== more && <a onClick={seeMore} className='text-[#A4B72E] block cursor-pointer hover:text-[#004436] mt-10 w-fit mx-auto'>see more</a>}
         <div onClick={() => setPreview("")} className={`${preview === "" ? "hidden" : "fixed"} top-0 w-full h-screen bg-[#0000003a] z-[99999]`}>
           <div className='flex items-center justify-center w-full h-full'>
             <img className='w-full md:w-[50%]' src={preview} alt="" />

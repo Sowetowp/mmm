@@ -78,7 +78,7 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
 
     return (
         <>
-            <section id='sec1' className='max-h-[45rem] xl:h-screen 2xl:h-[40vh] h-[60vh] bg-black m-auto w-full overflow-hidden max-w-[90rem] relative'>
+            <section id='sec1' className='max-h-[45rem] xl:h-screen 2xl:h-[42rem] h-[60vh] bg-black m-auto w-full overflow-hidden max-w-[95rem] relative'>
                 {slides.map((slide: any, index: any) => (
                     // <div key={index} className={`h-full w-full absolute ${currentIndex === index || prevIndex.current === index ? "z-[11]" : "z-10"} transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>
                     <div key={index} className={`h-full w-full  ${currentIndex === index || prevIndex.current === index ? "z-[11] opacity-100" : "z-10 opacity-0"} absolute transition-transform duration-700`} style={{ transform: `translateX(${position(index)})` }}>
@@ -100,7 +100,7 @@ const Carousel: React.FC<CarouselProps> = ({ view, slides, submitHandler, navDat
                 </button>
                 <div className='absolute z-20 flex gap-1 w-full justify-center bottom-4'>
                     {slides.map((slide: any, index: any) => (
-                        <div onClick={() => setCurrentIndex(index)} key={index} className={`${index === currentIndex ? "bg-white" : ""} border-2 border-white w-3 h-3 rounded-full`}></div>
+                        <div onClick={() => setCurrentIndex(index)} key={index} className={`${index === currentIndex ? "bg-white" : ""} border-2 border-white w-2 h-2 rounded-full`}></div>
                     ))}
                 </div>
                 <Navbar submitHandler={submitHandler} emailModal={emailModal} view={view} navData={navData} updateText={updateText} production={production} email={email} />
