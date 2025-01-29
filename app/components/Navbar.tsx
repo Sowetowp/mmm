@@ -132,6 +132,12 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                 <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="#sec6">WORK</a>
                 {/* <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="#sec7">BLOG</a> */}
                 <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="#sec8">CONTACT</a>
+                <a className='text-white text-[0.8rem] font-semibold py-2 text-center' href="mailto:info@technoglassng.com">
+                    <div className="tooltip-container">
+                        <span className="tooltip">info@technoglassng.com</span>
+                        <span className="text">@</span>
+                    </div>
+                </a>
             </section>
         </>
     )
