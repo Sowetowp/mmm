@@ -95,7 +95,7 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                     </section>
                 } */}
                 <section className='w-full py-4 md:py-7 px-3 md:px-8 xl:px-16 flex items-center justify-between'>
-                    <img alt="" className={`w-28 leading-none tracking-widest`} src="/Tecnologo.png"/>
+                    <img alt="" className={`w-28 leading-none tracking-widest`} src="/Tecnologo.png" />
                     {/* <h1 className={`text-xl leading-none tracking-widest ${scrollHeader ? "text-black" : "text-white"}`} onClick={() => updateText("navData", 5)}>{navData}</h1> */}
                     <div className='md:flex gap-8 items-center hidden'>
                         <a href='#sec1' className={`${scrollHeader && current === "sec1" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} hover:text-[#004436] text-[0.8rem] font-semibold`}>HOME</a>
@@ -105,6 +105,12 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                         <a className={`${current === "sec6" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec6">PRODUCTS</a>
                         {/* <a className={`${current === "sec7" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec7">BLOG</a> */}
                         <a className={`${current === "sec8" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec8">CONTACT</a>
+                        <a className={`${current === "sec8" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="mailto:info@technoglassng.com">
+                            <div className="tooltip-container">
+                                <span className="tooltip">info@technoglassng.com</span>
+                                <span className="text">@</span>
+                            </div>
+                        </a>
                     </div>
                     <div className='md:hidden'>
                         <label>
