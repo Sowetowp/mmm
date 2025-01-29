@@ -102,7 +102,7 @@ const Navbar: React.FC<CarouselProps> = ({ view, submitHandler, navData, updateT
                         <a className={`${current === "sec2" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec2">ABOUT</a>
                         <a className={`${current === "sec4" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec4">SERVICES</a>
                         {/* <a className={`${current === "sec5" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec5">TEAM</a> */}
-                        <a className={`${current === "sec6" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec6">WORK</a>
+                        <a className={`${current === "sec6" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec6">PRODUCTS</a>
                         {/* <a className={`${current === "sec7" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec7">BLOG</a> */}
                         <a className={`${current === "sec8" ? "text-[#A4B72E]" : scrollHeader ? "text-black" : "text-white"} text-[0.8rem] hover:text-[#004436] font-semibold`} href="#sec8">CONTACT</a>
                     </div>
