@@ -62,7 +62,7 @@ export default function Home() {
   const [textsToSave, setTextsToSave] = useState<{ [key: string]: string }>({});
   const [imagesToSave, setImagesToSave] = useState<{ [key: string]: string }>({});
 
-  const [texts, setTexts] = useState<any>({
+  const texts = {
     socials: { dribble: textsToSave?.["socialsdribble"] || "", behance: textsToSave?.["socialsbehance"] || "", ig: textsToSave?.["socialsig"] || "", fb: textsToSave?.["socialsfb"] || "", lin: textsToSave?.["socialslin"] || "", x: textsToSave?.["socialsx"] || "" },
     slides: [
       { img: imagesToSave["slides0img"] || '/IMG-1925.jpg', title: textsToSave?.["slides0title"] || "Innovative Glass Products", details: textsToSave?.["slides0details"] || "With 20 years of expertise, we deliver comprehensive glass solutions.", url: "#sec4", btn: "OUR SERVICES" },
@@ -238,36 +238,36 @@ export default function Home() {
         { img: "/image copy 7.png", id: 1, content: "MMIA Ikeja Lagos" },
         { img: "/image copy 8.png", id: 2, content: "Mega Chicken Complex, Amuwo Odofin, Lagos" },
         { img: "/image copy 9.png", id: 3, content: "Black Diamond Apartments, VI Lagos" },
-        { img: "/IMG-20250117-WA0004.jpg", id: 1, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0005.jpg", id: 2, content: "Curtain wall" },
-        { img: "/IMG-20250117-WA0006.jpg", id: 3, content: "Mirrors" },
-        { img: "/IMG-20250117-WA0007.jpg", id: 1, content: "Glass Staircase with Aluminuim Railings & Accesories" },
+        { img: "/IMG-20250117-WA0004.jpg", id: 4, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0005.jpg", id: 5, content: "Curtain wall" },
+        { img: "/IMG-20250117-WA0006.jpg", id: 6, content: "Mirrors" },
+        { img: "/IMG-20250117-WA0007.jpg", id: 7, content: "Glass Staircase with Aluminuim Railings & Accesories" },
         { img: "/IMG-20250117-WA0008.jpg", id: 2, content: "Balustrade" },
         { img: "/IMG-20250117-WA0009.jpg", id: 3, content: "Balustrade" },
         { img: "/IMG-20250117-WA0010.jpg", id: 1, content: "Glass Staircase with Aluminuim Railings & Accesories" },
-        { img: "/IMG-20250117-WA0011.jpg", id: 2, content: "Balustrade" },
-        { img: "/IMG-20250117-WA0012.jpg", id: 3, content: "Balustrade" },
-        { img: "/IMG-20250117-WA0013.jpg", id: 1, content: "Balustrade" },
-        { img: "/IMG-20250117-WA0014.jpg", id: 2, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0011.jpg", id: 4, content: "Balustrade" },
+        { img: "/IMG-20250117-WA0012.jpg", id: 5, content: "Balustrade" },
+        { img: "/IMG-20250117-WA0013.jpg", id: 6, content: "Balustrade" },
+        { img: "/IMG-20250117-WA0014.jpg", id: 7, content: "Shower Doors" },
         { img: "/IMG-20250117-WA0015.jpg", id: 3, content: "Balustrade" },
         { img: "/IMG-20250117-WA0016.jpg", id: 1, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0017.jpg", id: 2, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0018.jpg", id: 3, content: "Sliding doors" },
-        { img: "/IMG-20250117-WA0019.jpg", id: 1, content: "Sliding doors" },
-        { img: "/IMG-20250117-WA0020.jpg", id: 2, content: "Sliding doors" },
+        { img: "/IMG-20250117-WA0017.jpg", id: 4, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0018.jpg", id: 5, content: "Sliding doors" },
+        { img: "/IMG-20250117-WA0019.jpg", id: 6, content: "Sliding doors" },
+        { img: "/IMG-20250117-WA0020.jpg", id: 7, content: "Sliding doors" },
         // { img: "/IMG-20250117-WA0021.jpg", id: 3, content: "Balustrade" },
         { img: "/IMG-20250117-WA0022.jpg", id: 1, content: "Shower Doors" },
         { img: "/IMG-20250117-WA0023.jpg", id: 2, content: "Shower Doors" },
         { img: "/IMG-20250117-WA0024.jpg", id: 3, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0025.jpg", id: 1, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0026.jpg", id: 2, content: "Shower Doors" },
-        { img: "/IMG-20250117-WA0027.jpg", id: 3, content: "Sliding doors" },
-        { img: "/IMG-20250117-WA0028.jpg", id: 1, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0025.jpg", id: 4, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0026.jpg", id: 5, content: "Shower Doors" },
+        { img: "/IMG-20250117-WA0027.jpg", id: 6, content: "Sliding doors" },
+        { img: "/IMG-20250117-WA0028.jpg", id: 7, content: "Shower Doors" },
         { img: "/IMG-20250117-WA0029.jpg", id: 2, content: "Shower Doors" },
         { img: "/IMG-20250117-WA0030.jpg", id: 3, content: "Sliding doors" },
         { img: "/IMG-20250117-WA0031.jpg", id: 1, content: "Curtain wall" },
-        { img: "/IMG-20250117-WA0032.jpg", id: 2, content: "Curtain wall" },
-        { img: "/IMG-20250117-WA0033.jpg", id: 3, content: "Sliding doors" },
+        { img: "/IMG-20250117-WA0032.jpg", id: 4, content: "Curtain wall" },
+        { img: "/IMG-20250117-WA0033.jpg", id: 5, content: "Sliding doors" },
       ]
     },
     testimonyData: {
@@ -294,7 +294,7 @@ export default function Home() {
         { img: imagesToSave["blogDataworks2img"] || "/img_11.jpeg", title: textsToSave?.["blogDataworks2title"] || "Analytics is the important factor", det: textsToSave?.["blogDataworks2det"] || "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text for print.", day: textsToSave?.["blogDataworks2day"] || "JAN 11" }
       ]
     }
-  })
+  }
 
   const updateText = (key: any, range: number) => {
     if (production) {
