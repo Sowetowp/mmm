@@ -408,7 +408,7 @@ export default function Home() {
         <Happy view={view} details={texts.details} production={production} updateText={updateText} />
         <CaseStudies production={production} updateImage={updateImage} caseData={texts.caseData} updateText={updateText} />
         {/* <Testimony updateImage={updateImage} testimonyData={texts.testimonyData} updateText={updateText} /> */}
-        <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} />
+        {/* <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} /> */}
         <Contact load={setLoading} email={email} contactData={texts.contactData} updateText={updateText} />
         <Footer navData={texts.navData} socials={texts.socials} updateText={updateText} production={production} />
         {/* {modal &&
