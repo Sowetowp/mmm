@@ -306,31 +306,6 @@ export default function Home() {
     setKey(key)
   }
 
-  const update = () => {
-    if (key === "contactDatacoordinate" && (edit.split(",").length !== 2 || isNaN(Number(edit.split(",")[0])) || isNaN(Number(edit.split(",")[1])))) {
-      setMessage2("Input a correct coordinate separated by comma")
-      return;
-    }
-    setTextsToSave((prev: any) => ({ ...prev, [key]: edit }))
-    setModal(false)
-  }
-
-  const editor = (e: string) => {
-    setMessage2("")
-    if (e.length <= range) {
-      setEdit(e)
-    }
-  }
-
-  const handleChange = (e: any) => {
-    const file = e.target.files[0]
-    const reader = new FileReader()
-    reader.readAsDataURL(file)
-    reader.onloadend = () => {
-      setImagesToSave((prev: any) => ({ ...prev, [key]: reader.result }))
-    }
-  }
-
   const updateImage = (key: any) => {
     if (production) {
       return
@@ -433,7 +408,7 @@ export default function Home() {
         <Happy view={view} details={texts.details} production={production} updateText={updateText} />
         <CaseStudies production={production} updateImage={updateImage} caseData={texts.caseData} updateText={updateText} />
         {/* <Testimony updateImage={updateImage} testimonyData={texts.testimonyData} updateText={updateText} /> */}
-        {/* <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} /> */}
+        <Blog updateImage={updateImage} blogData={texts.blogData} updateText={updateText} />
         <Contact load={setLoading} email={email} contactData={texts.contactData} updateText={updateText} />
         <Footer navData={texts.navData} socials={texts.socials} updateText={updateText} production={production} />
         {/* {modal &&
