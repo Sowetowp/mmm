@@ -22,7 +22,7 @@ const Services: React.FC<servicesProp> = ({ servicesData, updateText }) => {
                 <p data-aos="fade-up" data-aos-duration="1000" className='mt-7 m-auto text-[0.95rem] text-gray-500 w-[90%] md:w-[60%] xl:w-[40%] text-center' onClick={() => updateText(`servicesDatabody`, 97)}>{servicesData.body}</p>
                 <div className='w-full snap-x px-10 flex overflow-x-scroll' style={{ scrollbarWidth: "none" , scrollSnapType: "x mandatory"}}>
                     {servicesData.exp.map((ex: any, index: any) => (
-                        <div onClick={() => setPreview(ex.img2)} key={index} className='xl:w-1/4 scroll-ml-14 snap-start md:w-1/2 w-full md:px-10 text-center flex-shrink-0 mt-14'>
+                        <div onClick={() => setPreview(ex.img2)} key={index} className='xl:w-[24%] scroll-ml-14 snap-start md:w-[49%] w-full md:px-10 text-center flex-shrink-0 mt-14'>
                             <span data-aos="fade-up" data-aos-duration="1000" className='bg- [#A4B72E] inline-block p-2 rounded-md' >{ex.img}</span>
                             <p data-aos="fade-up" data-aos-duration="1000" className='font-medium text-[0.9rem] mt-4' onClick={() => updateText(`servicesDataexp${index}head`, 17)}>{ex.head}</p>
                             <p data-aos="fade-up" data-aos-duration="1000" className='text-sm text-gray-500 mt-3' onClick={() => updateText(`servicesDataexp${index}body`, 100)}>{ex.body}</p>
