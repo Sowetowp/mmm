@@ -419,10 +419,10 @@
   /* z-index: ; */
 }
 
-.tooltip-container:hover {
+/* .tooltip-container:hover { */
   /* border-top-left-radius: 0;
   border-top-right-radius: 0; */
-}
+/* } */
 
 .tooltip-container:hover::before {
   transform: rotateY(0);
